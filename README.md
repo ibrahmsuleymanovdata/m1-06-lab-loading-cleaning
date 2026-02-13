@@ -12,26 +12,26 @@ By the end of the lab, you should be able to load data into pandas, inspect type
 
 ## Setup and Context
 
-You will use a provided CSV dataset for this lab. Download it here: [m1-06-loading-cleaning-lab.csv](https://drive.google.com/file/d/157_VWEZebbxMt1fTNi_kcFqP3jjWFZlq/view?usp=drive_link). Each row represents a support ticket with fields `ticket_id`, `opened_at`, `category`, `priority`, and `resolution_minutes`. The dataset includes intentional issues such as missing values, inconsistent casing, and invalid numeric entries. Work in a notebook named `m1-06-loading-cleaning-lab.ipynb`.
+You will use the CSV dataset included in this repository: `data_safe_copy.csv`. Each row represents a support ticket with fields `ticket_id`, `opened_at`, `category`, `priority`, and `resolution_minutes`. The dataset includes intentional issues such as missing values, inconsistent casing, and invalid numeric entries. Work in a notebook named `m1-06-loading-cleaning-lab.ipynb`.
 
 ## Requirements
 
 - Fork this repository to your own GitHub account.
 - Clone your fork to your machine.
-- Download the CSV file linked above and place it where your notebook can read it.
+- Use the included CSV file `data_safe_copy.csv` from the lab repository.
 - Make sure you can open and run Jupyter notebooks (for example via Jupyter Lab or VS Code).
 
 ## Getting Started
 
 - Create a new notebook and name it `m1-06-loading-cleaning-lab.ipynb`.
-- Confirm you can successfully load `m1-06-loading-cleaning-lab.csv` before moving on to cleaning steps.
+- Confirm you can successfully load `data_safe_copy.csv` before moving on to cleaning steps.
 - Before you submit, restart your kernel and run the notebook **top to bottom**.
 
 ## Tasks
 
 ### Task 1: Generate and load the raw dataset
 
-Load the CSV file `m1-06-loading-cleaning-lab.csv` into a DataFrame named `tickets`. Confirm that it has at least 500 rows. Print the first five rows and run `info()` to confirm the initial structure.
+Load the CSV file `data_safe_copy.csv` into a DataFrame named `tickets`. Confirm that it has at least 500 rows. Print the first five rows and run `info()` to confirm the initial structure.
 
 ### Task 2: Parse dates and clean categories
 
